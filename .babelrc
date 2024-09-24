@@ -1,0 +1,23 @@
+{
+  "presets": ["module:@react-native/babel-preset"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@assets": "./assets",
+          "@components": "./src/components",
+          "@views": "./src/views",
+          "@layouts": "./src/layouts",
+          "@hooks": "./src/hooks",
+          "@navigator": "./src/navigator",
+          "@utils": "./src/utils",
+          "@theme": "./src/theme",
+          "@modules": "./src/modules"
+        }
+      },
+      "react-native-reanimated/plugin"
+    ]
+  ]
+}
